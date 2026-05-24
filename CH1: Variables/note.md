@@ -32,16 +32,7 @@ func main() { // The entry point of every Go program
   * `package main` is required for programs intended to run as standalone executables.
   * Compiled programs are highly portable and performant.
 
-### Common Mistakes
-
-  * **Missing `package main`:** Forgetting this prevents the compiler from creating an executable.
-  * **Unused Imports:** Go will throw a compile-time error if you import a package (like `fmt`) but don't use it.
-
-### Practice Exercises
-
-1.  **Quiz:** Does a user need the Go compiler installed to run a program you've already compiled? (Answer: No).
-2.  **Coding:** Write a "Hello, World" program and identify the three main structural components.
-
+  
 -----
 
 ## Lecture 2: Variables & Types
@@ -57,14 +48,14 @@ Go offers multiple ways to declare variables:
 **1. The "Standard" Way:**
 
 ``` go
-var mySkillIssues int = 42
+var mySkillIssues int = 67
 
 ```
 
 **2. The "GOATed" Way (Short Variable Declaration):**
 
 ``` go
-mySkillIssues := 42 // Uses the "walrus operator"
+mySkillIssues := 67 // Uses the "walrus operator"
 
 ```
 
@@ -77,7 +68,7 @@ mileage, company := 80276, "Toyota" // Declare multiple variables on one line
 
 ### Deep Explanation
 
-  * **Type Inference:** When using `:=`, Go automatically determines the type based on the value assigned (e.g., `42` becomes an `int`, `3.14` becomes a `float64`).
+  * **Type Inference:** When using `:=`, Go automatically determines the type based on the value assigned (e.g., `67` becomes an `int`, `3.14` becomes a `float64`).
   * **The Walrus Operator (`:=`):** This is the idiomatic way to declare variables inside functions. **Constraint:** It cannot be used outside of a function (global/package scope).
   * **Strong Typing:** You cannot perform operations on mismatched types (e.g., adding an `int` to a `float64` or `string`) without explicit conversion.
 
@@ -92,10 +83,6 @@ mileage, company := 80276, "Toyota" // Declare multiple variables on one line
   * **Redeclaring with `:=`:** You cannot use `:=` to update an existing variable; use `=` instead.
   * **Global Walrus:** Attempting to use `:=` outside of a function will cause a compile error.
 
-### Practice Exercises
-
-1.  **Coding:** Declare a float called `averageOpenRate` and a string called `displayMessage` on the same line and initialize them.
-2.  **Logic:** If `x := 10` and `y := "5"`, why will `x + y` fail? (Answer: Go doesn't allow adding an `int` and a `string`).
 
 -----
 
@@ -104,6 +91,13 @@ mileage, company := 80276, "Toyota" // Declare multiple variables on one line
 ### Core Concepts
 
 Go provides granular control over numeric types and treats strings as sequences of bytes. It uses **Runes** to handle complex Unicode characters (like Emojis).
+
+These are different type sizes in Go: Signed integers - no decimal (int, int8, int16, int32, int64), Unsigned integers - non-negative numbers/no decimal (uint, uint8, uint16, uint32, uint64, uintptr), Signed decimal numbers (float32, float64), Complex numbers - a complex number has a real and imaginary part (complex64, complex128)
+
+Unless you have a good performance related reason, we'll typically just want to use the "default" types: `bool`, `string`, `int`, `uint`, `byte`, `rune (int 32)`, `float64`, `complex128`
+
+`int32`: Used as a general-purpose 32-bit signed integer for holding raw numbers.
+`rune`: Used specifically to signify that the integer represents a single Unicode code point (representing a character or symbol).
 
 ### Syntax & Examples
 
@@ -125,7 +119,7 @@ runeLength := utf8.RuneCountInString(name)
 
 ### Deep Explanation
 
-  * **Default Types:** Unless you have a specific performance reason, use `int`, `float64`, and `string`.
+  * **Default Types:** Unless you have a specific performance reason, use `bool`, `string`, `int`, `uint`, `byte`, `rune (int 32)`, `float64`, `complex128`.
   * **Numeric Sizes:** Types like `int8` or `uint32` specify how many bits are used in memory. `int` and `uint` sizes vary (32 or 64-bit) depending on the environment.
   * **Runes:** A `rune` is an alias for `int32`. It represents a single Unicode character, which is essential because characters like emojis take up multiple bytes.
   * **Bytes:** A `byte` is an alias for `uint8` and represents a single 8-bit value (0-255).
@@ -141,11 +135,7 @@ runeLength := utf8.RuneCountInString(name)
   * **Ignoring Unicode:** Assuming 1 byte = 1 character. This breaks when using non-English characters or emojis.
   * **Implicit Conversion:** Trying to pass a `uint16` into a function expecting an `int` without converting it first.
 
-### Practice Exercises
-
-1.  **Coding:** Convert a `float64` value `88.26` into an `int64`.
-2.  **Short Answer:** What is the difference between a `byte` and a `rune`? (Answer: A byte is 8-bit; a rune is 32-bit and represents a full Unicode character).
-
+  
 -----
 
 ## Lecture 4: Runtime, Memory, & Comments
@@ -203,10 +193,3 @@ The **Go Runtime** is a small piece of code included in every executable that ma
 2.  **Syntax:** Variable declarations (`var` vs `:=`) and comments.
 3.  **Data:** Static typing, type inference, and numeric sizes.
 4.  **Complex Data:** Byte vs. Rune and UTF-8 string encoding.
-
-### Most Important Concepts to Master
-
-1.  **Type Strictness:** Understanding that Go will not allow mismatched types without explicit conversion.
-2.  **Short Variable Declaration:** Mastering the `:=` operator for clean code inside functions.
-3.  **Runes vs. Bytes:** Knowing how to handle strings safely in a Unicode-first world.
-4.  **Garbage Collection:** Recognizing that Go manages memory for you, which simplifies development.
