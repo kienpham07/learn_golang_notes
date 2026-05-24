@@ -40,7 +40,6 @@ func main() {
 | `b`       | ASCII | `62`            | 1                  | 1          |
 | `🐻`       | Emoji | `F0 9F 90 BB`   | 4                  | 1          |
 
-**Analogy**: Think of a string as a shelf of Lego bricks. Some "characters" (like standard letters) are just 1 brick wide. Others (like emojis) are 4 bricks wide. `len()` tells you how many bricks are on the shelf, while `RuneCountInString` tells you how many actual "toys" were built.
 
 ### Key Takeaways
 
