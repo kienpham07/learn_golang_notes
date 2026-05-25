@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="308aa14e-8db3-48bb-a38a-52bd6155d362" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="11" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+  </component>
+  <component name="GOROOT" url="file:///usr/lib/golang" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.9255505219678275" />
+      <entry key="MS500" value="4.589037697235864" />
+      <entry key="S2" value="16.85657873796683" />
+      <entry key="S5" value="36.89964972650253" />
+      <entry key="S10" value="62.560555464787555" />
+      <entry key="S30" value="118.36760066298406" />
+      <entry key="S60" value="147.73606658903688" />
+      <entry key="M2" value="166.97946551886307" />
+      <entry key="M5" value="184.4654942921125" />
+      <entry key="M10" value="206.63583982807407" />
+      <entry key="M15" value="232.51069191081083" />
+      <entry key="M30" value="320.9276878875718" />
+      <entry key="H1" value="453.49509905536905" />
+      <entry key="H2" value="580.7733522568741" />
+      <entry key="H4" value="673.2005588308781" />
+      <entry key="D1" value="772.8694870052007" />
+      <entry key="W1" value="792.6210577501913" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="7.650325038625882E-150" />
+      <entry key="S5" value="3.5119352661033425E-60" />
+      <entry key="S10" value="2.950008288612947E-30" />
+      <entry key="S30" value="2.9623418210531624E-10" />
+      <entry key="S60" value="3.3767321449455084E-5" />
+      <entry key="M2" value="0.013489972573903239" />
+      <entry key="M5" value="0.6467947792104436" />
+      <entry key="M10" value="2.8109795018338204" />
+      <entry key="M15" value="4.834269891206233" />
+      <entry key="M30" value="8.824829349495264" />
+      <entry key="H1" value="12.561087406637066" />
+      <entry key="H2" value="15.471003805420466" />
+      <entry key="H4" value="17.44054794143094" />
+      <entry key="D1" value="19.519269150792553" />
+      <entry key="W1" value="19.929767627810527" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.8763216971799899" />
+      <entry key="MS500" value="4.5639688676228305" />
+      <entry key="S2" value="16.832385050731975" />
+      <entry key="S5" value="36.87807713252783" />
+      <entry key="S10" value="62.541999721373976" />
+      <entry key="S30" value="118.35559980651351" />
+      <entry key="S60" value="147.72854274646159" />
+      <entry key="M2" value="166.98819843778088" />
+      <entry key="M5" value="185.0997312162603" />
+      <entry key="M10" value="209.4199919710132" />
+      <entry key="M15" value="237.31326779417776" />
+      <entry key="M30" value="329.7216881957203" />
+      <entry key="H1" value="466.0327303651417" />
+      <entry key="H2" value="596.2291047453215" />
+      <entry key="H4" value="690.6321906230972" />
+      <entry key="D1" value="792.3870299403799" />
+      <entry key="W1" value="812.5505717916144" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3A3TRoquQLenrxU79Ut7iwO6tCi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build Test - Golang/.executor": "Run",
+    "Go Build.go build test1.go.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "go.sdk.automatically.set": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/kienpham07/Downloads/Disk D Window/Learning code resource/golang_code_practice/learn_go_gin_yt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="Test" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn_go_gin_yt" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Test - Golang/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Test" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn_go_gin_yt" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-72a9cf600ed8-3dd3895e5e08-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-261.24374.154" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-GO-261.24374.154" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="308aa14e-8db3-48bb-a38a-52bd6155d362" name="Changes" comment="" />
+      <created>1771820250999</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771820250999</updated>
+      <workItem from="1771863413603" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoModernizerVersionTracker">
+    <upgrades>
+      <map>
+        <entry key="$PROJECT_DIR$/go.mod">
+          <value>
+            <VersionUpgradeInfo>
+              <version>1.26.3</version>
+              <timestamp>1779702245013</timestamp>
+            </VersionUpgradeInfo>
+          </value>
+        </entry>
+      </map>
+    </upgrades>
+  </component>
+</project>
