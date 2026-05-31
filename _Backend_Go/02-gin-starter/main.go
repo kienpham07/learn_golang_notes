@@ -1,6 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"fmt"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	r := gin.Default()
@@ -8,7 +12,6 @@ func main() {
 	r.GET("/demo", func(ctx *gin.Context) {
 		ctx.JSON(200, gin.H{"message": "Hello world", "number": 67})
 	})
-
 	r.GET("/users", func(ctx *gin.Context) {
 		ctx.JSON(200, gin.H{"data": "List of users"})
 	})
@@ -39,4 +42,6 @@ func main() {
 	})
 
 	r.Run(":8080")
+
+	fmt.Println("Hello world")
 }
