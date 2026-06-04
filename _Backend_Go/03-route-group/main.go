@@ -10,26 +10,41 @@ import (
 func main() {
 	r := gin.Default()
 
-	userHandlerV1 := v1handler.NewUserHandler()
-	r.GET("/api/v1/users", userHandlerV1.GetUsersV1)
-	r.GET("/api/v1/users/:id", userHandlerV1.GetUsersByIdV1)
-	r.POST("/api/v1/users", userHandlerV1.PostUsersV1)
-	r.PUT("/api/v1/users/:id", userHandlerV1.PutUsersV1)
-	r.DELETE("/api/v1/users/:id", userHandlerV1.DeleteUsersV1)
+	v1 := r.Group("/api/v1")
+	{
+		user := v1.Group("/users")
+		{
+			userHandlerV1 := v1handler.NewUserHandler()
+			user.GET("/", userHandlerV1.GetUsersV1)
+			user.GET("/:id", userHandlerV1.GetUsersByIdV1)
+			user.POST("/", userHandlerV1.PostUsersV1)
+			user.PUT("/:id", userHandlerV1.PutUsersV1)
+			user.DELETE("/:id", userHandlerV1.DeleteUsersV1)
+		}
 
-	productHandlerV1 := v1handler.NewProductHandler()
-	r.GET("/api/v1/products", productHandlerV1.GetProductsV1)
-	r.GET("/api/v1/products/:id", productHandlerV1.GetProductsByIdV1)
-	r.POST("/api/v1/products", productHandlerV1.PostProductsV1)
-	r.PUT("/api/v1/products/:id", productHandlerV1.PutProductsV1)
-	r.DELETE("/api/v1/products/:id", productHandlerV1.DeleteProductsV1)
+		group := v1.Group("/products")
+		{
+			productHandlerV1 := v1handler.NewProductHandler()
+			group.GET("/", productHandlerV1.GetProductsV1)
+			group.GET("/:id", productHandlerV1.GetProductsByIdV1)
+			group.POST("/", productHandlerV1.PostProductsV1)
+			group.PUT("/:id", productHandlerV1.PutProductsV1)
+			group.DELETE("/:id", productHandlerV1.DeleteProductsV1)
+		}
+	}
 
-	userHandlerV2 := v2handler.NewUserHandler()
-	r.GET("/api/v2/users", userHandlerV2.GetUsersV2)
-	r.GET("/api/v2/users/:id", userHandlerV2.GetUsersByIdV2)
-	r.POST("/api/v2/users", userHandlerV2.PostUsersV2)
-	r.PUT("/api/v2/users/:id", userHandlerV2.PutUsersV2)
-	r.DELETE("/api/v2/users/:id", userHandlerV2.DeleteUsersV2)
+	v2 := r.Group("/api/v2")
+	{
+		user := v2.Group("/users")
+		{
+			userHandlerV2 := v2handler.NewUserHandler()
+			user.GET("/", userHandlerV2.GetUsersV2)
+			user.GET("/:id", userHandlerV2.GetUsersByIdV2)
+			user.POST("/", userHandlerV2.PostUsersV2)
+			user.PUT("/:id", userHandlerV2.PutUsersV2)
+			user.DELETE("/:id", userHandlerV2.DeleteUsersV2)
+		}
+	}
 
 	r.Run(":8080")
 }
