@@ -31,7 +31,7 @@ func main() {
 	r.GET("/product/:product_name", func(ctx *gin.Context) {
 		product_name := ctx.Param("product_name")
 		price := ctx.Query("price")
-		color := ctx.Query("color") // Query parameter is optional
+		color := ctx.Query("color") // Query parameter is optional but path is mandatory
 
 		ctx.JSON(200, gin.H{
 			"data":         "Product information",
